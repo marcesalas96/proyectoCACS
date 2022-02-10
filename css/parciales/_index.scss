@@ -1,0 +1,43 @@
+/* HERO */
+
+.main__hero{
+    &__contenedor{
+        background: $background;
+            width: auto;
+            border-radius: 2%;
+            &__imagen{
+                height: 850px;
+                @media screen and (max-width: 900px) {
+                    height: 400px;
+                }
+                @media screen and (max-width: 475px){
+                    height: 200px;
+                }
+            }
+        }
+}
+
+/*SEGUNDA SECCION INDEX*/
+
+.main__segundaSeccion{
+    &__contenedor{
+        display: flex;
+        gap: 1rem;
+        margin: 1rem;
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+        }
+        &__item{
+            display: flex;
+            flex-direction: column-reverse;
+            background-color: #808080;
+            padding: 1rem;
+            gap: 1rem;
+            flex-basis: 100%;
+            border-radius: 2%;
+            &__imagen{
+                width: 100%;
+            }
+        }
+    }
+}

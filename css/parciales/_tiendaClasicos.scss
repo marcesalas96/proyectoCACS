@@ -1,0 +1,45 @@
+/*TIENDA DE CLASICOS*/
+.main__contenedor__destacados{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        padding: 20px;
+        @media screen and (max-width: 1270px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media screen and (max-width: 680px) {
+            grid-template-columns: 1fr;
+            
+        }
+        &__card{
+            margin-bottom: 100px;
+            justify-self: center;
+            &__link{
+                display: flex;
+            }
+        }
+    }
+
+.main__contenedor__tienda{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:auto;
+    gap: 20px;
+    @media screen and (max-width: 1248px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+        @media screen and (max-width: 636px) {
+            grid-template-columns: 1fr;
+    }
+    &__card{
+        margin-top: 50px;
+        justify-self: center;
+        &--ultimaColumna{
+            @extend .main__contenedor__tienda__card;
+            margin-bottom: 130px;
+        }
+        &__link{
+            display: flex;
+        }
+    }
+}

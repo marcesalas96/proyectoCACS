@@ -1,0 +1,30 @@
+/*NUESTRO CLUB*/
+.main__nuestroClub{
+    display: flex;
+    flex-direction: column;
+    &__contenedor{
+        display: flex;
+        padding: 1rem;
+        gap: 2rem;
+        margin: 2rem;
+        border-radius: 1%;
+        font-size: 19px;
+        background: $background;
+        @media screen and (max-width: 1024px) {
+            flex-direction: column;
+        }
+        &__imagen{
+            width: 750px;
+            @media screen and (max-width: 1024px) {
+                width: 100%;
+            }
+        }
+        &--izquierda{
+            @extend .main__nuestroClub__contenedor;
+            flex-direction: row-reverse;
+            @media screen and (max-width: 1024px) {
+                flex-direction: column;
+            }
+        }
+    }
+}
