@@ -8,6 +8,8 @@
     }
     &__contenedor{
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         font-size: 24px;
         padding: 10px;
         background: $background;
@@ -23,6 +25,7 @@
     display: flex;
     gap: 1rem;
     margin: 1rem;
+    
     @media screen and (max-width: 990px) {
         flex-direction: column;
     }
