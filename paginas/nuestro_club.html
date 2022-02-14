@@ -6,17 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="proyecto, salon, exterior, arquitectura, historia, club, salta">
-    <meta name="description" content="Conocé la historia de nuestro club, como empezamos y a donde vamos"> 
+    <meta name="description" content="Conocé la historia de nuestro club, como empezamos y a donde vamos">
     <title>Historia y proyecto de nuestro club - Club de autos de coleccion - SALTA</title>
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- ANIMACIONES - AOES -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS PROPIO -->
-        <link rel="stylesheet" href="../css/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/main.css" rel="stylesheet" type="text/css">
     <!-- FONTS -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:display=swap" rel="stylesheet">
 </head>
@@ -24,7 +24,8 @@
 <body>
     <div class="contenedor">
         <header class="header">
-            <img src="../multimedia/varios/checkered-flag-texture.jpg" alt="imagen de fondo de una bandera a cuadros " class="header__fondo">
+            <img src="../multimedia/varios/checkered-flag-texture.jpg" alt="imagen de fondo de una bandera a cuadros "
+                class="header__fondo">
             <nav class="navbar navbar-expand-lg navbar-light d-flex flex-lg-column header__nav">
                 <div>
                     <a class="navbar-brand " href="../index.html">
@@ -60,42 +61,440 @@
             </nav>
         </header>
         <main class="main">
-            <h1>Historia de nuestro club</h1>
-            <p>Gabi, aqui voy a hacer una linda galeria de fotos, pero para la proxima entrega, por el momento estoy probando el uso de git. jeje</p>
+            <h1 class="tituloh1" id="titulo">Pasado, presente y futuro de nuestro club</h1>
             <section class="main__nuestroClub">
-                <h2 class="tituloh2">Proyecto Salon C.A.C.S </h2>
+                <!-- Aqui comienzan las imagenes -->
+                <h2 class="tituloh2">Asi comenzamos</h2>
                 <div class="main__nuestroClub__contenedor">
-                    <img class="main__nuestroClub__contenedor__imagen"
-                        src="../multimedia/interiorCacs/interiorCacs1.jpg"
-                        alt="imagen de la puerta de entrada del CACS">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, debitis tempore
-                        laudantium amet ea aspernatur beatae, exercitationem et molestias quam veniam maiores. Iste
-                        expedita assumenda illo molestiae ab quasi nostrum?</p>
+                    <a href="#pasado3"><img class="main__nuestroClub__contenedor__imagen--primera"
+                            src="../multimedia/pasadoCacs/pasado3.jpg" alt="Vista trasera de las obras del quincho"></a>
+                    <a href="#pasado4"><img class="main__nuestroClub__contenedor__imagen"
+                            src="../multimedia/pasadoCacs/pasado4.png"
+                            alt="Obra de la entrada del quincho del club"></a>
+                    <a href="#pasado5"><img class="main__nuestroClub__contenedor__imagen"
+                            src="../multimedia/pasadoCacs/pasado5.png"
+                            alt="Socios disfrutando de la primera parte de la obra del quincho"></a>
+                    <a href="#pasado6"><img class="main__nuestroClub__contenedor__imagen"
+                            src="../multimedia/pasadoCacs/pasado6.png"
+                            alt="Vista general del predio del club, con el quincho en obra de fondo"></a>
+                    <a href="#pasado9"><img class="main__nuestroClub__contenedor__imagen"
+                            src="../multimedia/pasadoCacs/pasado9.png"
+                            alt="Primera etapa de la obra lista, foto del quincho de adelante ya terminado"></a>
+                    <a href="#pasado7"><img class="main__nuestroClub__contenedor__imagen"
+                            src="../multimedia/pasadoCacs/pasado7.png"
+                            alt="Inauguracion del quincho, socios disfrutando y podemos ver la banda de musica del regimiento de caballeria ligera 5, los infernales"></a>
+                    <a href="#pasado11"><img class="main__nuestroClub__contenedor__imagen--ultima"
+                            src="../multimedia/pasadoCacs/pasado11.png"
+                            alt="Foto de noche, el quincho en su maximo esplendor, todas las luces prendidas, fiesta"></a>
                 </div>
-                <div class="main__nuestroClub__contenedor--izquierda">
-                    <img class="main__nuestroClub__contenedor__imagen"
-                        src="../multimedia/interiorCacs/interiorCacs6.jpg" alt="imagen del quincho del club">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque est voluptate culpa sunt officiis,
-                        fuga, amet aliquam reiciendis maiores magni odio, earum sapiente optio nemo autem in
-                        exercitationem harum enim!</p>
+                <!-- Aqui comienzan los articles para ver las imagenes grandes -->
+                <article class="main__nuestroClub__contenedor__articulo" id="pasado3">
+                    <a href="#pasado4">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </a>
+                    <img class="main__nuestroClub__contenedor__articulo__imagen"
+                        src="../multimedia/pasadoCacs/pasado3.jpg" alt="">
+                    <a class="main__nuestroClub__contenedor__articulo__link" href="#titulo"><button
+                            type="button" class="btn-close btn-close-white" aria-label="Close"></button></a>
+                </article>
+                <article class="main__nuestroClub__contenedor__articulo" id="pasado4">
+                    <a href="#pasado3">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Antes</span> 
+                        </button>
+                    </a>
+                    <a href="#pasado5">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Despues</span>
+                        </button>
+                    </a>
+                    <a class="main__nuestroClub__contenedor__articulo__link" href="#titulo"><button
+                            type="button" class="btn-close btn-close-white" aria-label="Close"></button></a>
+                    <img class="main__nuestroClub__contenedor__articulo__imagen"
+                        src="../multimedia/pasadoCacs/pasado4.png" alt="">
+                </article>
+                <article class="main__nuestroClub__contenedor__articulo" id="pasado5">
+                    <a href="#pasado4">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Antes</span> 
+                        </button>
+                    </a>
+                    <a href="#pasado6">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Despues</span>
+                        </button>
+                    </a>
+                    <a class="main__nuestroClub__contenedor__articulo__link" href="#titulo"><button
+                            type="button" class="btn-close btn-close-white" aria-label="Close"></button></a>
+                    <img class="main__nuestroClub__contenedor__articulo__imagen"
+                        src="../multimedia/pasadoCacs/pasado5.png" alt="">
+                </article>
+                <article class="main__nuestroClub__contenedor__articulo" id="pasado6">
+                    <a href="#pasado5">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Antes</span> 
+                        </button>
+                    </a>
+                    <a href="#pasado9">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Despues</span>
+                        </button>
+                    </a>
+                    <a class="main__nuestroClub__contenedor__articulo__link" href="#titulo"><button
+                            type="button" class="btn-close btn-close-white" aria-label="Close"></button></a>
+                    <img class="main__nuestroClub__contenedor__articulo__imagen"
+                        src="../multimedia/pasadoCacs/pasado6.png" alt="">
+                </article>
+                <article class="main__nuestroClub__contenedor__articulo" id="pasado9">
+                    <a href="#pasado6">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Antes</span>
+                        </button>
+                    </a>
+                    <a href="#pasado7">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Despues</span>
+                        </button>
+                    </a>
+                    <a class="main__nuestroClub__contenedor__articulo__link" href="#titulo"><button
+                            type="button" class="btn-close btn-close-white" aria-label="Close"></button></a>
+                    <img class="main__nuestroClub__contenedor__articulo__imagen"
+                        src="../multimedia/pasadoCacs/pasado9.png" alt="">
+                </article>
+                <article class="main__nuestroClub__contenedor__articulo" id="pasado7">
+                    <a href="#pasado9">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Antes</span> 
+                        </button>
+                    </a>
+                    <a href="#pasado11">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Despues</span>
+                        </button>
+                    </a>
+                    <a class="main__nuestroClub__contenedor__articulo__link" href="#titulo"><button
+                            type="button" class="btn-close btn-close-white" aria-label="Close"></button></a>
+                    <img class="main__nuestroClub__contenedor__articulo__imagen"
+                        src="../multimedia/pasadoCacs/pasado7.png" alt="">
+                </article>
+                <article class="main__nuestroClub__contenedor__articulo" id="pasado11">
+                    <a href="#pasado7">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Antes</span> </button>
+                    </a>
+                    <a class="main__nuestroClub__contenedor__articulo__link" href="#titulo"><button
+                            type="button" class="btn-close btn-close-white " aria-label="Close"></button></a>
+                    <img class="main__nuestroClub__contenedor__articulo__imagen"
+                        src="../multimedia/pasadoCacs/pasado11.png" alt="">
+                </article>
+            </section>
+            <!-- Aqui comineza la section Presente -->
+            <section class="main__nuestroClub">
+                <h2 class="tituloh2" id="titulo2">Obras actuales</h2>
+                <div class="main__nuestroClub__contenedor">
+                    <a href="#obranueva1"><img src="../multimedia/obraNueva/obranueva1.jpeg" alt="Imagen de la obra del club, con el techo descubierto" class="main__nuestroClub__contenedor__imagen"></a>
+                    <a href="#obranueva2"><img src="../multimedia/obraNueva/obrenueva2.jpeg" alt="Imagen de la obra del club, vigas listas para colocar el techo nuevo" class="main__nuestroClub__contenedor__imagen"></a>
+                    <a href="#obranueva3"><img src="../multimedia/obraNueva/obranueva3.jpeg" alt="Imagen de la obra del club, techo parcialmente colocado" class="main__nuestroClub__contenedor__imagen"></a>
+                    <a href="#obranueva6"><img src="../multimedia/obraNueva/obranueva6.jpeg" alt="Imagen de la obra del club, techo colocado por completo" class="main__nuestroClub__contenedor__imagen"></a>
+                    <a href="#obranueva11"><img src="../multimedia/obraNueva/obranueva11.jpeg" alt="Imagen de la obra del club, chimenea lista" class="main__nuestroClub__contenedor__imagen"></a>
+                    <a href="#obranueva7"><img src="../multimedia/obraNueva/obranueva7.jpeg" alt="Imagen de la obra del club, vista desde afuera" class="main__nuestroClub__contenedor__imagen"></a>
+                    <a href="#obranueva10"><img src="../multimedia/obraNueva/obranueva10.jpeg" alt="Imagen de la obra del club, barra lista y techo pintado de blanco" class="main__nuestroClub__contenedor__imagen"></a>
+                </div>
+                    <!-- Aqui comienzan los articles para ver las imagenes grandes-->
+                <article class="main__nuestroClub__contenedor__articulo" id="obranueva1">
+                    <a href="#obranueva2">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </a>
+                    <img class="main__nuestroClub__contenedor__articulo__imagen"
+                        src="../multimedia/obraNueva/obranueva1.jpeg" alt="">
+                    <a class="main__nuestroClub__contenedor__articulo__link" href="#titulo2"><button
+                            type="button" class="btn-close btn-close-white" aria-label="Close"></button></a>
+                </article>
+                <article class="main__nuestroClub__contenedor__articulo" id="obranueva2">
+                    <a href="#obranueva1">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Antes</span> 
+                        </button>
+                    </a>
+                    <a href="#obranueva3">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Despues</span>
+                        </button>
+                    </a>
+                    <a class="main__nuestroClub__contenedor__articulo__link" href="#titulo2"><button
+                            type="button" class="btn-close btn-close-white" aria-label="Close"></button></a>
+                    <img class="main__nuestroClub__contenedor__articulo__imagen"
+                        src="../multimedia/obraNueva/obrenueva2.jpeg" alt="">
+                </article>
+                <article class="main__nuestroClub__contenedor__articulo" id="obranueva3">
+                    <a href="#obranueva2">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Antes</span> 
+                        </button>
+                    </a>
+                    <a href="#obranueva6">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Despues</span>
+                        </button>
+                    </a>
+                    <a class="main__nuestroClub__contenedor__articulo__link" href="#titulo2"><button
+                            type="button" class="btn-close btn-close-white" aria-label="Close"></button></a>
+                    <img class="main__nuestroClub__contenedor__articulo__imagen"
+                        src="../multimedia/obraNueva/obranueva3.jpeg" alt="">
+                </article>
+                <article class="main__nuestroClub__contenedor__articulo" id="obranueva6">
+                    <a href="#obranueva3">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Antes</span> 
+                        </button>
+                    </a>
+                    <a href="#obranueva11">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Despues</span>
+                        </button>
+                    </a>
+                    <a class="main__nuestroClub__contenedor__articulo__link" href="#titulo2"><button
+                            type="button" class="btn-close btn-close-white" aria-label="Close"></button></a>
+                    <img class="main__nuestroClub__contenedor__articulo__imagen"
+                        src="../multimedia/obraNueva/obranueva6.jpeg" alt="">
+                </article>
+                <article class="main__nuestroClub__contenedor__articulo" id="obranueva11">
+                    <a href="#obranueva6">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Antes</span>
+                        </button>
+                    </a>
+                    <a href="#obranueva7">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Despues</span>
+                        </button>
+                    </a>
+                    <a class="main__nuestroClub__contenedor__articulo__link" href="#titulo2"><button
+                            type="button" class="btn-close btn-close-white" aria-label="Close"></button></a>
+                    <img class="main__nuestroClub__contenedor__articulo__imagen"
+                        src="../multimedia/obraNueva/obranueva11.jpeg" alt="">
+                </article>
+                <article class="main__nuestroClub__contenedor__articulo" id="obranueva7">
+                    <a href="#obranueva11">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Antes</span> 
+                        </button>
+                    </a>
+                    <a href="#obranueva10">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Despues</span>
+                        </button>
+                    </a>
+                    <a class="main__nuestroClub__contenedor__articulo__link" href="#titulo2"><button
+                            type="button" class="btn-close btn-close-white" aria-label="Close"></button></a>
+                    <img class="main__nuestroClub__contenedor__articulo__imagen"
+                        src="../multimedia/obraNueva/obranueva7.jpeg" alt="">
+                </article>
+                <article class="main__nuestroClub__contenedor__articulo" id="obranueva10">
+                    <a href="#obranueva7">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Antes</span> </button>
+                    </a>
+                    <a class="main__nuestroClub__contenedor__articulo__link" href="#titulo2"><button
+                            type="button" class="btn-close btn-close-white " aria-label="Close"></button></a>
+                    <img class="main__nuestroClub__contenedor__articulo__imagen"
+                        src="../multimedia/obraNueva/obranueva10.jpeg" alt="">
+                </article>
+                <!-- Video dando por finalizadas las obras-->
+                <div class="main__nuestroClub__contenedor__video">
+                    <video class="" src="../multimedia/obraNueva/obranueva.mp4" controls></video>
                 </div>
             </section>
-            <h2 class="tituloh2">Proyecto predio C.A.C.S.</h2>
+            <!-- El club actualmente -->
             <section class="main__nuestroClub">
-                <div class="main__nuestroClub__contenedor  ">
-                    <img class="main__nuestroClub__contenedor__imagen" src="../multimedia/exteriorCacs/02.jpg"
-                        alt="imagen exterior del predio del cacs">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque est voluptate culpa sunt officiis,
-                        fuga, amet aliquam reiciendis maiores magni odio, earum sapiente optio nemo autem in
-                        exercitationem harum enim!</p>
+                <h2 class="tituloh2">El presente del club</h2>
+                <div class="main__nuestroClub__contenedor">
+                    <a href="#obranueva1"><img src="../multimedia/obraNueva/obranueva1.jpeg" alt="Imagen de la obra del club, con el techo descubierto" class="main__nuestroClub__contenedor__imagen"></a>
+                    <a href="#obranueva2"><img src="../multimedia/obraNueva/obrenueva2.jpeg" alt="Imagen de la obra del club, vigas listas para colocar el techo nuevo" class="main__nuestroClub__contenedor__imagen"></a>
+                    <a href="#obranueva3"><img src="../multimedia/obraNueva/obranueva3.jpeg" alt="Imagen de la obra del club, techo parcialmente colocado" class="main__nuestroClub__contenedor__imagen"></a>
+                    <a href="#obranueva6"><img src="../multimedia/obraNueva/obranueva6.jpeg" alt="Imagen de la obra del club, techo colocado por completo" class="main__nuestroClub__contenedor__imagen"></a>
+                    <a href="#obranueva11"><img src="../multimedia/obraNueva/obranueva11.jpeg" alt="Imagen de la obra del club, chimenea lista" class="main__nuestroClub__contenedor__imagen"></a>
+                    <a href="#obranueva7"><img src="../multimedia/obraNueva/obranueva7.jpeg" alt="Imagen de la obra del club, vista desde afuera" class="main__nuestroClub__contenedor__imagen"></a>
+                    <a href="#obranueva10"><img src="../multimedia/obraNueva/obranueva10.jpeg" alt="Imagen de la obra del club, barra lista y techo pintado de blanco" class="main__nuestroClub__contenedor__imagen"></a>
                 </div>
-                <div class="main__nuestroClub__contenedor--izquierda">
-                    <img class="main__nuestroClub__contenedor__imagen" src="../multimedia/exteriorCacs/013.jpg"
-                        alt="imagen nocturna exterior del predio del cacs">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque est voluptate culpa sunt officiis,
-                        fuga, amet aliquam reiciendis maiores magni odio, earum sapiente optio nemo autem in
-                        exercitationem harum enim!</p>
-                </div>
+                    <!-- Aqui comienzan los articles para ver las imagenes grandes -->
+                <article class="main__nuestroClub__contenedor__articulo" id="obranueva1">
+                    <a href="#obranueva2">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </a>
+                    <img class="main__nuestroClub__contenedor__articulo__imagen"
+                        src="../multimedia/obraNueva/obranueva1.jpeg" alt="">
+                    <a class="main__nuestroClub__contenedor__articulo__link" href="#titulo"><button
+                            type="button" class="btn-close btn-close-white" aria-label="Close"></button></a>
+                </article>
+                <article class="main__nuestroClub__contenedor__articulo" id="obranueva2">
+                    <a href="#obranueva1">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Antes</span> 
+                        </button>
+                    </a>
+                    <a href="#obranueva3">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Despues</span>
+                        </button>
+                    </a>
+                    <a class="main__nuestroClub__contenedor__articulo__link" href="#titulo"><button
+                            type="button" class="btn-close btn-close-white" aria-label="Close"></button></a>
+                    <img class="main__nuestroClub__contenedor__articulo__imagen"
+                        src="../multimedia/obraNueva/obrenueva2.jpeg" alt="">
+                </article>
+                <article class="main__nuestroClub__contenedor__articulo" id="obranueva3">
+                    <a href="#obranueva2">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Antes</span> 
+                        </button>
+                    </a>
+                    <a href="#obranueva6">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Despues</span>
+                        </button>
+                    </a>
+                    <a class="main__nuestroClub__contenedor__articulo__link" href="#titulo"><button
+                            type="button" class="btn-close btn-close-white" aria-label="Close"></button></a>
+                    <img class="main__nuestroClub__contenedor__articulo__imagen"
+                        src="../multimedia/obraNueva/obranueva3.jpeg" alt="">
+                </article>
+                <article class="main__nuestroClub__contenedor__articulo" id="obranueva6">
+                    <a href="#obranueva3">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Antes</span> 
+                        </button>
+                    </a>
+                    <a href="#obranueva11">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Despues</span>
+                        </button>
+                    </a>
+                    <a class="main__nuestroClub__contenedor__articulo__link" href="#titulo"><button
+                            type="button" class="btn-close btn-close-white" aria-label="Close"></button></a>
+                    <img class="main__nuestroClub__contenedor__articulo__imagen"
+                        src="../multimedia/obraNueva/obranueva6.jpeg" alt="">
+                </article>
+                <article class="main__nuestroClub__contenedor__articulo" id="obranueva11">
+                    <a href="#obranueva6">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Antes</span>
+                        </button>
+                    </a>
+                    <a href="#obranueva7">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Despues</span>
+                        </button>
+                    </a>
+                    <a class="main__nuestroClub__contenedor__articulo__link" href="#titulo"><button
+                            type="button" class="btn-close btn-close-white" aria-label="Close"></button></a>
+                    <img class="main__nuestroClub__contenedor__articulo__imagen"
+                        src="../multimedia/obraNueva/obranueva11.jpeg" alt="">
+                </article>
+                <article class="main__nuestroClub__contenedor__articulo" id="obranueva7">
+                    <a href="#obranueva11">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Antes</span> 
+                        </button>
+                    </a>
+                    <a href="#obranueva10">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Despues</span>
+                        </button>
+                    </a>
+                    <a class="main__nuestroClub__contenedor__articulo__link" href="#titulo"><button
+                            type="button" class="btn-close btn-close-white" aria-label="Close"></button></a>
+                    <img class="main__nuestroClub__contenedor__articulo__imagen"
+                        src="../multimedia/obraNueva/obranueva7.jpeg" alt="">
+                </article>
+                <article class="main__nuestroClub__contenedor__articulo" id="obranueva10">
+                    <a href="#obranueva7">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Antes</span> </button>
+                    </a>
+                    <a class="main__nuestroClub__contenedor__articulo__link" href="#titulo"><button
+                            type="button" class="btn-close btn-close-white " aria-label="Close"></button></a>
+                    <img class="main__nuestroClub__contenedor__articulo__imagen"
+                        src="../multimedia/obraNueva/obranueva10.jpeg" alt="">
+                </article>
             </section>
             <section class="main__formulario">
                 <div data-aos="fade-zoom-out" data-aos-anchor-placement="center-bottom" data-aos-duration="3000"
@@ -111,7 +510,6 @@
                                     class="main__formulario__contenedor__form__fieldset__contenedor__label">Ingrese su
                                     nombre y apellido</label><input type="text" name="nombre"
                                     class="main__formulario__contenedor__form__fieldset__contenedor__input" />
-
                             </div>
                             <div class="main__formulario__contenedor__form__fieldset__contenedor">
                                 <label for="telefono"
@@ -124,7 +522,6 @@
                                     class="main__formulario__contenedor__form__fieldset__contenedor__label">Ingrese su
                                     e-mail</label><input type="email" name="email"
                                     class="main__formulario__contenedor__form__fieldset__contenedor__input" />
-
                             </div>
                             <div class="main__formulario__contenedor__form__fieldset__contenedor">
                                 <label for="comentario"

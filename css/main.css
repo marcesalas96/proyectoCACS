@@ -204,61 +204,103 @@ p {
 
 /*NUESTRO CLUB*/
 .main__nuestroClub {
+  margin-top: 50px;
+}
+
+.main__nuestroClub__contenedor {
+  border-radius: 5px;
+  margin-bottom: 100px;
+  background: #c8c8c8;
+  padding: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  row-gap: 1rem;
+  justify-items: center;
+}
+
+.main__nuestroClub__contenedor__video {
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.main__nuestroClub__contenedor, .main__nuestroClub__contenedor--izquierda {
+.main__nuestroClub__contenedor__articulo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1rem;
-  gap: 2rem;
-  margin: 2rem;
-  border-radius: 1%;
-  font-size: 19px;
-  background: -webkit-gradient(linear, left top, right top, color-stop(21%, #616161), to(#d5d5d5));
-  background: linear-gradient(90deg, #616161 21%, #d5d5d5 100%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 
-@media screen and (max-width: 1024px) {
-  .main__nuestroClub__contenedor, .main__nuestroClub__contenedor--izquierda {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+.main__nuestroClub__contenedor__articulo:target {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
-.main__nuestroClub__contenedor__imagen {
-  width: 750px;
+.main__nuestroClub__contenedor__articulo__link {
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  color: #c8c8c8;
+  text-align: center;
+  z-index: 100;
 }
 
-@media screen and (max-width: 1024px) {
-  .main__nuestroClub__contenedor__imagen {
-    width: 100%;
-  }
+.main__nuestroClub__contenedor__articulo__imagen {
+  max-height: 90vh;
+  max-width: 85vw;
 }
 
-.main__nuestroClub__contenedor--izquierda {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+.main__nuestroClub__contenedor__imagen, .main__nuestroClub__contenedor__imagen--primera, .main__nuestroClub__contenedor__imagen--ultima {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-bottom: 1px black solid;
+  border-top: 1px black solid;
+  width: 100%;
+  min-height: 200px;
 }
 
-@media screen and (max-width: 1024px) {
-  .main__nuestroClub__contenedor--izquierda {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+.main__nuestroClub__contenedor__imagen:hover, .main__nuestroClub__contenedor__imagen--primera:hover, .main__nuestroClub__contenedor__imagen--ultima:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  border: 1px black solid;
+}
+
+.main__nuestroClub__contenedor__imagen--primera {
+  border-left: 1px black solid;
+}
+
+.main__nuestroClub__contenedor__imagen--ultima {
+  border-right: 1px black solid;
 }
 
 /*TIENDA DE CLASICOS*/

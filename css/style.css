@@ -1,0 +1,403 @@
+/*General*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: "Oswald", sans-serif;
+}
+
+/*ROOT*/
+
+h2 {
+    font-size: 2rem;
+    color: whitesmoke;
+    font-weight: 600;
+    padding: 1rem;
+    text-align: center;
+    transform: skewX(-1deg);
+}
+
+h3 {
+    font-size: 20px;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+}
+
+h4 {
+    font-size: 16px;
+    color: black;
+    padding: 1rem;
+}
+
+/*Header*/
+/*Logo y Titulo*/
+
+.header {
+    position: relative;
+    overflow: hidden;
+}
+.header .imagenHeader {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+}
+.header nav {
+    position: relative;
+    z-index: 2;
+}
+.divNav li{
+    text-transform: uppercase;
+}
+.divNav li a{
+    font-size: 25px;
+}
+
+.divLogo>a>.logoClub {
+    width: 250px;
+}
+.header__logo{
+    width: 250px;
+}
+.header__link{
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+/*Main*/
+main {
+    background-color: black;
+}
+
+/*Index*/
+/*Primer seccion*/
+.hero .contenedorHero {
+    background: linear-gradient(180deg, rgba(97, 97, 97, 1) 21%, rgba(213, 213, 213, 1) 100%);
+    width: auto;
+    border-radius: 2%;
+}
+
+.contenedorHero>div>a>img {
+    max-width: 1800px;
+    height: 600px;
+}
+
+/*Segunda Seccion Index*/
+.secundario .contenedorSecundario {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.contenedorSecundario div {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #808080;
+    padding: 1rem;
+    gap: 1rem;
+    flex-basis: 100%;
+    border-radius: 2%;
+}
+
+.contenedorSecundario div img {
+    width: 100%;
+}
+
+/*Nuestros Club*/
+.nuestroClub {
+    display: flex;
+    flex-direction: column;
+}
+
+.nuestroClub div {
+    display: flex;
+    padding: 1rem;
+    gap: 2rem;
+    margin: 2rem;
+    border-radius: 1%;
+    font-size: 1rem;
+    background: rgb(97, 97, 97);
+    background: linear-gradient(90deg, rgba(97, 97, 97, 1) 21%, rgba(213, 213, 213, 1) 100%);
+}
+
+.nuestroClub .seccIzqu {
+    flex-direction: row-reverse;
+}
+
+.nuestroClub img {
+    width: 50%;
+}
+
+/*Tienda de Clasicos*/
+.tiendaClasicos {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 20px;
+
+}
+
+.tiendaClasicos .contenedorTc {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.tiendaClasicos .contenedorTc .infoTc {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(90deg, rgba(97, 97, 97, 1) 21%, rgba(213, 213, 213, 1) 100%);
+}
+
+.tiendaClasicos .contenedorTc div p {
+    padding: 1rem;
+}
+
+.tiendaClasicos img {
+    max-width: 100vh;
+}
+
+.secundarioTc div div .tienda {
+    max-width: 100%;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.secundarioTc{ 
+    margin: 100px;
+}
+.secundarioTc .contenedorSecTc{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.secundarioTc .contenedorSecTc div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2%;
+    padding: 1rem;
+    background: linear-gradient(90deg, rgba(97, 97, 97, 1) 21%, rgba(213, 213, 213, 1) 100%);
+}
+
+/*Inscripcion*/
+.formu{
+    background-color: wheat;
+    
+}
+.formu fieldset div{
+    display: flex;
+    
+    width: 700px !important;
+}
+.formu fieldset input{
+    width: 700px !important;
+}
+.inscripcion {
+    display: flex;
+    justify-content: center;
+}
+
+.inscripcion div form {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    width: 500px;
+    justify-self: center;
+    background: rgb(97, 97, 97);
+    background: linear-gradient(90deg, rgba(97, 97, 97, 1) 21%, rgba(213, 213, 213, 1) 100%);
+}
+
+.inscripcion div form fieldset div {
+    display: flex;
+    align-items: center;
+}
+
+
+.inscripcion div form fieldset fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.inscripcion div form fieldset fieldset .botones {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.inscripcion div form fieldset fieldset .botones input {
+    padding: 0.5rem;
+}
+
+/*Vuelta a los Valles*/
+.vueltaALosValles {
+    margin: 1rem 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.vueltaALosValles div {
+    display: flex;
+    font-size: 1.5rem;
+    background: rgb(97, 97, 97);
+    background: linear-gradient(90deg, rgba(97, 97, 97, 1) 21%, rgba(213, 213, 213, 1) 100%)
+}
+.contenedorVv img{
+    height: 100%;
+}
+/*Formulario*/
+.formulario {
+    grid-area: formulario;
+    background-color: black;
+}
+
+.formulario div {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario div form fieldset div {
+    justify-content: flex-start;
+}
+
+.formulario div form fieldset div input {
+    width: 650px; ;
+}
+
+.formulario div form {
+    margin: 2.5rem;
+    width: 700px;
+    padding: 1rem;
+    background: rgb(97, 97, 97);
+    background: linear-gradient(180deg, rgba(97, 97, 97, 1) 10%, rgba(213, 213, 213, 1) 100%);
+    border-radius: 2%;
+}
+
+.formulario div form .botones {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.formulario div form .botones input {
+    padding: 0.5rem;
+}
+
+fieldset {
+    border: 1px solid #bf0000;
+}
+
+/*Footer*/
+.footer {
+    grid-area: footer;
+    background: rgb(97, 97, 97);
+    background: linear-gradient(90deg, rgba(213, 213, 213, 1) 30%, rgba(30, 30, 30, 1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer div iframe {
+    width: 250px;
+    height: 250px;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer ul li {
+    padding: 1rem;
+}
+
+.footer ul li a {
+    padding: 0.5rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.footer ul li a:hover {
+    padding: 0.5rem;
+    background-color: black;
+    color: rgba(97, 97, 97, 1);
+}
+
+.footer .logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 1rem;
+}
+
+.footer .logos a:hover {
+    transform: scale(2, 2);
+}
+
+/*Body Grid*/
+
+.contenedor {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+        "header"
+        "hero"
+        "secundario"
+        "formulario"
+        "footer";
+}
+@media only screen and (max-width: 1024px){
+    .header .imagenHeader{
+        height: 100%;
+    }
+    .tiendaClasicos .contenedorTc{
+        flex-direction: column;
+    }
+    .vueltaALosValles{
+        flex-direction: column;
+    }
+    .vueltaALosValles div{
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 796px) {
+    .divLogo a {
+        justify-content: center;
+    }
+    .secundarioTc .contenedorSecTc{
+        flex-direction: column;
+    }
+    .secundario>.contenedorSecundario {
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+        padding: 10px;
+    }
+    .footer {
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    p{
+        font-size: 30px;
+    }
+}
