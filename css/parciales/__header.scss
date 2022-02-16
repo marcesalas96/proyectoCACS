@@ -1,5 +1,6 @@
 
 .header{
+    background: black;
     position: relative;
     overflow: hidden;
     /*IMAGEN BACKGROUND*/
@@ -22,26 +23,18 @@
             justify-content: center;
         }
         &__logo{
-            width: 250px;
+            width: 280px;
+            margin-top: -30px;
+            margin-bottom: -30px;
+            margin-left: -50px;
             @media screen and (max-width: 850px) {
-                width: 250px*0.80;
+                width: 280px*0.80;
             }
         }
-        &__list{
-            background-color: black;
-            opacity: 0.8;
-            &__item{
-                text-transform: uppercase;
-                &__link{
-                    font-size: 20px;
-                    color: rgb(97, 97, 97);
-                    text-decoration: none;
-                    font-weight: 600;
-                    &:hover{
-                        color: black !important;
-                        background-color: rgb(97,97,97) !important;
-                    }
-                }
+        &__link:hover{
+            transform: scale(1.05,1.05);
+            @media screen and (max-width: 850px) {
+                transform: none;
             }
         }
     }

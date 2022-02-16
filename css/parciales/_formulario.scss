@@ -1,5 +1,8 @@
 /* FORMULARIO */
 .main__formulario{
+    position: relative;
+    top: 100%;
+    background-color: rgb(15,15,15);
     &__contenedor{
         display: flex;
         justify-content: center;
