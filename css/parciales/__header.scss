@@ -1,41 +1,19 @@
 
-.header{
-    background: black;
-    position: relative;
-    overflow: hidden;
-    /*IMAGEN BACKGROUND*/
-    &__fondo{
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: auto;
-        opacity: 0.6;
-        @media screen and (max-width: 1024px){
-            height: 100%;
-        }
-    }
     /*NAV Y LOGO*/
-    &__nav{
-        position: relative;
-        z-index: 2;
-        @media screen and (max-width: 994px){
-            justify-content: center;
-        }
-        &__logo{
-            width: 280px;
-            margin-top: -30px;
-            margin-bottom: -30px;
-            margin-left: -50px;
-            @media screen and (max-width: 850px) {
-                width: 280px*0.80;
+.header__nav{
+    &__logo{
+        width: 280px;
+        margin-top: -30px;
+        margin-bottom: -30px;
+        margin-left: -50px;
+        @media screen and (max-width: 850px) {
+            width: 280px*0.80;
             }
         }
-        &__link:hover{
-            transform: scale(1.05,1.05);
-            @media screen and (max-width: 850px) {
-                transform: none;
+    &__link:hover{
+        transform: scale(1.05,1.05);
+        @media screen and (max-width: 850px) {
+            transform: none;
             }
         }
     }
-}
