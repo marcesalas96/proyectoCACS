@@ -48,42 +48,6 @@ p {
 }
 
 /*VARIABLES*/
-.header {
-  background: black;
-  position: relative;
-  overflow: hidden;
-  /*IMAGEN BACKGROUND*/
-  /*NAV Y LOGO*/
-}
-
-.header__fondo {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: auto;
-  opacity: 0.6;
-}
-
-@media screen and (max-width: 1024px) {
-  .header__fondo {
-    height: 100%;
-  }
-}
-
-.header__nav {
-  position: relative;
-  z-index: 2;
-}
-
-@media screen and (max-width: 994px) {
-  .header__nav {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 .header__nav__logo {
   width: 280px;
   margin-top: -30px;
