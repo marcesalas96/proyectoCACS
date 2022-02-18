@@ -1,4 +1,46 @@
 /*TIENDA DE CLASICOS*/
+
+.main__contenedor__tienda{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:auto;
+    gap: 20px;
+    @media screen and (max-width: 1248px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 636px) {
+            grid-template-columns: 1fr;
+        }
+    &__card{
+        width: 18rem;
+        margin-top: 50px;
+        justify-self: center;
+        @media screen and (max-width: 636px) {
+            width: 100%;
+            flex-direction: row;
+            font-size: 13px;
+        }
+        &--ultimaColumna{
+            @extend .main__contenedor__tienda__card;
+            margin-bottom: 130px;
+            @media screen and (max-width: 1248px) {
+                margin-bottom: 0px;
+            }
+        }
+        &__link{
+            display: flex;
+        }
+        &__imagen{
+            height: 286px;
+            width: 286px;
+            object-fit: cover;
+            @media screen and (max-width: 425px) {
+                height: 100%;
+                width: 150px;
+            }
+        }
+    }
+}
 .main__contenedor__destacados{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -17,34 +59,8 @@
             &__link{
                 display: flex;
             }
-        }
-    }
-
-.main__contenedor__tienda{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows:auto;
-    gap: 20px;
-    @media screen and (max-width: 1248px) {
-        grid-template-columns: repeat(2, 1fr);
-    }
-        @media screen and (max-width: 636px) {
-            grid-template-columns: 1fr;
-    }
-    &__card{
-        margin-top: 50px;
-        justify-self: center;
-        &--ultimaColumna{
-            @extend .main__contenedor__tienda__card;
-            margin-bottom: 130px;
-        }
-        &__link{
-            display: flex;
-        }
-        &__imagen{
-            height: 286px;
-            width: 286px;
-            object-fit: cover;
+            &__imagen{
+                @extend .main__contenedor__tienda__card__imagen
             }
         }
     }
