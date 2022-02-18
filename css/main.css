@@ -49,6 +49,8 @@ p {
 
 /*VARIABLES*/
 .header__nav__logo {
+  position: -webkit-sticky;
+  position: sticky;
   width: 280px;
   margin-top: -30px;
   margin-bottom: -30px;
@@ -120,25 +122,42 @@ p {
 }
 
 /*SEGUNDA SECCION INDEX*/
-.index__section {
+.main__index__section {
   background-color: #0f0f0f;
   padding-top: 100px;
   overflow: hidden;
 }
 
-.index__section__carrousel {
-  padding: 3rem;
-}
-
-.index__section__carrousel__imagen {
+.main__index__section__carrousel__imagen {
   width: 100%;
-  height: 900px;
+  height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (max-width: 1000px) {
-  .index__section__carrousel__imagen {
+  .main__index__section__carrousel__imagen {
     height: auto;
   }
+}
+
+.main__index__section__contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.main__index__section__contenedor__imagen {
+  width: 30vw;
+}
+
+.main__index__section__contenedor__texto {
+  color: white;
+  padding: 2rem;
+  line-height: 2rem;
+  font-size: 22px;
 }
 
 /*FORMULARIO DE INSCRIPCION*/
