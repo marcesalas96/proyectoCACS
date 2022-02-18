@@ -34,7 +34,7 @@
             height: 286px;
             width: 286px;
             object-fit: cover;
-            @media screen and (max-width: 425px) {
+            @media screen and (max-width: 450px) {
                 height: 100%;
                 width: 150px;
             }
@@ -46,21 +46,30 @@
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
         padding: 20px;
-        @media screen and (max-width: 1270px) {
+        @media screen and (max-width: 1380px) {
             grid-template-columns: repeat(2, 1fr);
         }
-        @media screen and (max-width: 680px) {
+        @media screen and (max-width: 728px) {
             grid-template-columns: 1fr;
             
         }
         &__card{
+            width: 20rem;
             margin-bottom: 100px;
             justify-self: center;
+            @media screen and (max-width: 406px) {
+                width: 100%;
+            }
             &__link{
                 display: flex;
             }
             &__imagen{
-                @extend .main__contenedor__tienda__card__imagen
+                width: 318px;
+                height: 318px;
+                object-fit: cover;
+                @media screen and (max-width: 406px) {
+                    width: 100%;
+                }
             }
         }
     }

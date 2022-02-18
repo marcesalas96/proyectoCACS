@@ -404,15 +404,15 @@ p {
   display: flex;
 }
 
-.main__contenedor__tienda__card__imagen, .main__contenedor__destacados__card__imagen {
+.main__contenedor__tienda__card__imagen {
   height: 286px;
   width: 286px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-@media screen and (max-width: 425px) {
-  .main__contenedor__tienda__card__imagen, .main__contenedor__destacados__card__imagen {
+@media screen and (max-width: 450px) {
+  .main__contenedor__tienda__card__imagen {
     height: 100%;
     width: 150px;
   }
@@ -428,14 +428,14 @@ p {
   padding: 20px;
 }
 
-@media screen and (max-width: 1270px) {
+@media screen and (max-width: 1380px) {
   .main__contenedor__destacados {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 728px) {
   .main__contenedor__destacados {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -443,15 +443,35 @@ p {
 }
 
 .main__contenedor__destacados__card {
+  width: 20rem;
   margin-bottom: 100px;
   -ms-grid-column-align: center;
       justify-self: center;
+}
+
+@media screen and (max-width: 406px) {
+  .main__contenedor__destacados__card {
+    width: 100%;
+  }
 }
 
 .main__contenedor__destacados__card__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.main__contenedor__destacados__card__imagen {
+  width: 318px;
+  height: 318px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 406px) {
+  .main__contenedor__destacados__card__imagen {
+    width: 100%;
+  }
 }
 
 /*VUELTA A LOS VALLES*/
