@@ -41,5 +41,10 @@
         &__link{
             display: flex;
         }
+        &__imagen{
+            height: 286px;
+            width: 286px;
+            object-fit: cover;
+            }
+        }
     }
-}

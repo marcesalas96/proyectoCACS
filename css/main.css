@@ -383,6 +383,13 @@ p {
   display: flex;
 }
 
+.main__contenedor__tienda__card__imagen {
+  height: 286px;
+  width: 286px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /*VUELTA A LOS VALLES*/
 .main__vueltaValles__hero {
   display: -webkit-box;
