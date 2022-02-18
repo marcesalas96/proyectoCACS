@@ -142,15 +142,34 @@ p {
 }
 
 .main__index__section__contenedor {
+  border-top: 1px white solid;
+  border-bottom: 1px white solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1rem;
-  margin: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .main__index__section__contenedor {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .main__index__section__contenedor__imagen {
   width: 30vw;
+}
+
+@media screen and (max-width: 970px) {
+  .main__index__section__contenedor__imagen {
+    width: 50vw;
+  }
 }
 
 .main__index__section__contenedor__texto {
@@ -158,6 +177,26 @@ p {
   padding: 2rem;
   line-height: 2rem;
   font-size: 22px;
+}
+
+.main__index__section__contenedor__texto--cel {
+  color: white;
+  padding: 2rem;
+  line-height: 2rem;
+  font-size: 22px;
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+  .main__index__section__contenedor__texto--cel {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .main__index__section__contenedor__texto {
+    display: none;
+  }
 }
 
 /*FORMULARIO DE INSCRIPCION*/
