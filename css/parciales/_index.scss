@@ -37,8 +37,8 @@
 
 .main__index__section{
     background-color: rgb(15,15,15);
-    padding-top: 100px;
     overflow: hidden;
+    padding-top: 20px;
     &__carrousel{
         &__imagen{
             width: 100%;
@@ -63,6 +63,7 @@
             width: 30vw;
             @media screen and (max-width: 970px) {
                 width: 50vw;
+                padding-top: 20px;
                 
             }
         }

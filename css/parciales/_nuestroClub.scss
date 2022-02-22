@@ -1,14 +1,11 @@
 /*NUESTRO CLUB*/
 .main__nuestroClub{
     margin-top: 50px;
+    margin-bottom: 50px;
     &__contenedor{
-        border-radius: 5px;
-        margin-bottom: 100px;
-        background: rgb(200,200,200);
-        padding: 10px;
         display: grid;
-        grid-template-columns: repeat(7,1fr);
-        grid-template-rows: auto;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1fr 1fr;
         row-gap: 1rem;
         justify-items: center;
         @media screen and (max-width: 768px) {
@@ -16,11 +13,14 @@
             grid-template-rows: repeat(7, auto);
         }
         &Video{
-            margin-top: 10px;
+            margin-top: 50px;
+            margin-bottom: 50px;
             display: flex;
             justify-content: center;
             align-items: center;
             &__video{
+                    background-color: white;
+                    padding: 2px;
                     width: 900px;
                     @media screen and (max-width: 920px) {
                         width: 100%;
@@ -59,22 +59,20 @@
             }
         }
         &__imagen{
+            background-color: white;
+            padding: 2px;
             object-fit: cover;
-            border-bottom: 1px black solid;
-            border-top: 1px black solid;
-            width: 100%;
-            min-height: 200px;
+            width: 400px;
+            height: 300px;
             &:hover{
-                transform: scale(1.2,1.2);
+                transform: scale(1.05,1.05);
                 border: 1px black solid
             }
             &--primera{
                 @extend .main__nuestroClub__contenedor__imagen;
-                border-left: 1px black solid;
             }
             &--ultima{
                 @extend .main__nuestroClub__contenedor__imagen;
-                border-right: 1px black solid;
             }
         }
     }

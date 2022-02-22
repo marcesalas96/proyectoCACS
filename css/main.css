@@ -124,8 +124,8 @@ p {
 /*SEGUNDA SECCION INDEX*/
 .main__index__section {
   background-color: #0f0f0f;
-  padding-top: 100px;
   overflow: hidden;
+  padding-top: 20px;
 }
 
 .main__index__section__carrousel__imagen {
@@ -169,6 +169,7 @@ p {
 @media screen and (max-width: 970px) {
   .main__index__section__contenedor__imagen {
     width: 50vw;
+    padding-top: 20px;
   }
 }
 
@@ -228,19 +229,16 @@ p {
 /*NUESTRO CLUB*/
 .main__nuestroClub {
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .main__nuestroClub__contenedor {
-  border-radius: 5px;
-  margin-bottom: 100px;
-  background: #c8c8c8;
-  padding: 10px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[7];
-      grid-template-columns: repeat(7, 1fr);
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
   row-gap: 1rem;
   justify-items: center;
 }
@@ -255,7 +253,8 @@ p {
 }
 
 .main__nuestroClub__contenedorVideo {
-  margin-top: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,6 +267,8 @@ p {
 }
 
 .main__nuestroClub__contenedorVideo__video {
+  background-color: white;
+  padding: 2px;
   width: 900px;
 }
 
@@ -323,26 +324,18 @@ p {
 }
 
 .main__nuestroClub__contenedor__imagen, .main__nuestroClub__contenedor__imagen--primera, .main__nuestroClub__contenedor__imagen--ultima {
+  background-color: white;
+  padding: 2px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-bottom: 1px black solid;
-  border-top: 1px black solid;
-  width: 100%;
-  min-height: 200px;
+  width: 400px;
+  height: 300px;
 }
 
 .main__nuestroClub__contenedor__imagen:hover, .main__nuestroClub__contenedor__imagen--primera:hover, .main__nuestroClub__contenedor__imagen--ultima:hover {
-  -webkit-transform: scale(1.2, 1.2);
-          transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
   border: 1px black solid;
-}
-
-.main__nuestroClub__contenedor__imagen--primera {
-  border-left: 1px black solid;
-}
-
-.main__nuestroClub__contenedor__imagen--ultima {
-  border-right: 1px black solid;
 }
 
 /*TIENDA DE CLASICOS*/
