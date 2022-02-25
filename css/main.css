@@ -235,20 +235,26 @@ p {
 .main__nuestroClub__contenedor {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   row-gap: 1rem;
   justify-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1234px) {
   .main__nuestroClub__contenedor {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: (auto)[7];
-        grid-template-rows: repeat(7, auto);
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .main__nuestroClub__contenedor {
+    display: none;
   }
 }
 
@@ -336,6 +342,29 @@ p {
   -webkit-transform: scale(1.05, 1.05);
           transform: scale(1.05, 1.05);
   border: 1px black solid;
+}
+
+.main__nuestroClub__carousel {
+  display: none;
+}
+
+@media screen and (max-width: 830px) {
+  .main__nuestroClub__carousel {
+    display: block;
+    background-color: white;
+    padding: 2px;
+  }
+}
+
+.main__nuestroClub__carousel__imagen {
+  width: 100%;
+  height: 450px;
+}
+
+@media screen and (max-width: 570px) {
+  .main__nuestroClub__carousel__imagen {
+    height: 250px;
+  }
 }
 
 /*TIENDA DE CLASICOS*/
