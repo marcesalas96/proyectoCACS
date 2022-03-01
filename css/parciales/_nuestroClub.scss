@@ -12,7 +12,7 @@
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr;
         }
-        @media screen and (max-width: 830px) {
+        @media screen and (max-width: 850px) {
             display: none;
         }
         &Video{
@@ -81,7 +81,7 @@
     }
     &__carousel{
         display: none;
-        @media screen and (max-width: 830px) {
+        @media screen and (max-width: 850px) {
             display: block;
             background-color: white;
             padding: 2px;

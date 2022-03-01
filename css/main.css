@@ -252,7 +252,7 @@ p {
   }
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 850px) {
   .main__nuestroClub__contenedor {
     display: none;
   }
@@ -348,7 +348,7 @@ p {
   display: none;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 850px) {
   .main__nuestroClub__carousel {
     display: block;
     background-color: white;
