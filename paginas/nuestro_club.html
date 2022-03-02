@@ -674,55 +674,25 @@
                 </article>
             </section>
             <section class="main__formulario">
-                <div data-aos="fade-zoom-out" data-aos-anchor-placement="center-bottom" data-aos-duration="3000"
-                    class="main__formulario__contenedor">
-                    <form action="get" name="formulario" enctype="text/plain"
-                        class="main__formulario__contenedor__form">
-                        <fieldset class="main__formulario__contenedor__form__fieldset">
-                            <legend>
-                                <h3 class="tituloh3">Contactanos!</h3>
-                            </legend>
-                            <div class="main__formulario__contenedor__form__fieldset__contenedor">
-                                <label for="nombre"
-                                    class="main__formulario__contenedor__form__fieldset__contenedor__label">Ingrese su
-                                    nombre y apellido</label><input type="text" name="nombre"
-                                    class="main__formulario__contenedor__form__fieldset__contenedor__input" />
+                <form class="main__formulario__contenedor" action="get" name="formulario" enctype="text/plain">
+                    <fieldset class="main__formulario__contenedor__fieldset">
+                        <legend>
+                            <h3 class="tituloh3">Contactanos!</h3>
+                        </legend>
+                            <div class="form-floating mb-1">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="Nombre y Apellido">
+                                <label for="floatingInput">Nombre y Apellido</label>
                             </div>
-                            <div class="main__formulario__contenedor__form__fieldset__contenedor">
-                                <label for="telefono"
-                                    class="main__formulario__contenedor__form__fieldset__contenedor__label">Ingrese su
-                                    numero de telefono</label><input type="text" name="telefono"
-                                    class="main__formulario__contenedor__form__fieldset__contenedor__input" />
+                            <div class="form-floating mb-1">
+                                <input type="email" class="form-control" id="floatingemail" placeholder="email">
+                                <label for="floatingemail">Ingrese su mail</label>
                             </div>
-                            <div class="main__formulario__contenedor__form__fieldset__contenedor">
-                                <label for="email"
-                                    class="main__formulario__contenedor__form__fieldset__contenedor__label">Ingrese su
-                                    e-mail</label><input type="email" name="email"
-                                    class="main__formulario__contenedor__form__fieldset__contenedor__input" />
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Dejanos tu mensaje!" id="floatingTextarea" style="height:  100px;"></textarea>
+                                <label for="floatingTextarea">Dejanos tu mensaje!</label>
                             </div>
-                            <div class="main__formulario__contenedor__form__fieldset__contenedor">
-                                <label for="comentario"
-                                    class="main__formulario__contenedor__form__fieldset__contenedor__label">Ingrese su
-                                    mensaje a contiuacion</label>
-                            </div>
-                            <div class="main__formulario__contenedor__form__fieldset__contenedor">
-                                <textarea class="main__formulario__contenedor__form__fieldset__contenedor__textarea"
-                                    name="comentario" cols="30" rows="10"
-                                    maxlength="150"> Maximo 150 caracteres</textarea>
-                            </div>
-                            <div class="main__formulario__contenedor__form__fieldset__contenedor__botones">
-                                <label for="enviar"
-                                    class="main__formulario__contenedor__form__fieldset__contenedor__botones__label"><input
-                                        type="submit" value="Enviar mensaje!"
-                                        class="main__formulario__contenedor__form__fieldset__contenedor__botones__label__input" /></label>
-                                <label for="reset"
-                                    class="main__formulario__contenedor__form__fieldset__contenedor__botones__label"><input
-                                        type="reset" value="Resetear mensaje"
-                                        class="main__formulario__contenedor__form__fieldset__contenedor__botones__label__input" /></label>
-                            </div>
-                        </fieldset>
-                    </form>
-                </div>
+                    </fieldset>
+                </form>
             </section>
         </main>
         <footer class="footer">

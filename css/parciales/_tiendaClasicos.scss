@@ -20,6 +20,23 @@
             flex-direction: row;
             font-size: 13px;
         }
+        &__boton{
+            padding: 5px;
+            color:#fff;
+            background-color: #1e293b;
+            border: 0 solid #e2e8f0;
+            border-radius: 1.5rem;
+            line-height: 1;
+            padding: 1rem 1.6rem;
+            text-decoration: none #0d172a solid;
+            transition: all .1s cubic-bezier(.4,0,.2,1);
+            box-shadow: 0px 1px 2px rgba(255, 255, 255, 0.25);
+            &:hover{
+                transform: scale(1.05,1.05);
+                background-color: #1e293b;
+                color: #fff
+            }
+        }
         &--ultimaColumna{
             @extend .main__contenedor__tienda__card;
             margin-bottom: 130px;

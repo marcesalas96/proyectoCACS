@@ -6,15 +6,24 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     @media screen and (max-width: 768px) {
         background-position: 50%;
+        justify-content: center;
+        align-items: flex-start;
     }
     &__texto{
         text-align: center;
-        position: absolute;
-        top:10%;
-        left: 10%;
+        margin-bottom: 20%;
+        margin-left: 100px;
         color: white;
+        @media screen and (max-width: 768px) {
+            margin-bottom: 0;
+            margin-left: 0;
+            margin-top: 30px;
+        }
         &__boton{
             padding: 5px;
             color:#0d172a;
