@@ -224,6 +224,20 @@ p {
 
 /*FORMULARIO DE INSCRIPCION*/
 .main__inscripcion {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../multimedia/varios/socios.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../multimedia/varios/socios.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .main__inscripcion {
+    width: 100vw;
+  }
+}
+
+.main__inscripcion__formulario {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -232,13 +246,14 @@ p {
           justify-content: center;
 }
 
-.main__inscripcion__fieldset {
+.main__inscripcion__formulario__fieldset {
   border: black 2px solid;
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 20px;
-  background: #c8c8c8;
+  margin-bottom: 20px;
 }
 
-.main__inscripcion__fieldset__contenedor {
+.main__inscripcion__formulario__fieldset__contenedor {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -246,6 +261,27 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.main__inscripcion__formulario__fieldset__boton {
+  padding: 5px;
+  color: #0d172a;
+  background-color: #fff;
+  border: 0 solid #e2e8f0;
+  border-radius: 1.5rem;
+  line-height: 1;
+  padding: 1rem 1.6rem;
+  -webkit-text-decoration: none #0d172a solid;
+          text-decoration: none #0d172a solid;
+  -webkit-transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+          box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+}
+
+.main__inscripcion__formulario__fieldset__boton:hover {
+  background-color: #1e293b;
+  color: #fff;
 }
 
 /*NUESTRO CLUB*/

@@ -50,34 +50,42 @@
             </div>
         </nav>
     </header>
-    <main class="main">
-        <h2 class="tituloh2">LLENE EL SIGUIENTE FORMULARIO PARA QUE PROCESEMOS SU INSCRIPCION</h2>
-        <form class="main__inscripcion">
-            <fieldset class="main__inscripcion__fieldset">
+    <main class="main__inscripcion">
+        <h2 class="tituloh2">POR FAVOR, COMPLETE EL SIGUIENTE FORMULARIO PARA REVISAR SU SOLICITUD</h2>
+        <form class="main__inscripcion__formulario">
+            <fieldset class="main__inscripcion__formulario__fieldset">
                 <div class="row g-3 mb-3">
                     <div class="col">
-                        <label for="Nombre" class="form-label">Ingrese su nombre</label>
-                        <input type="text" class="form-control" placeholder="Ingrese su nombre" aria-label="Nombre">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" placeholder="Ingrese su nombre" id="floatingNombre">
+                            <label for="floatingNombre">Ingrese su nombre</label>
+                        </div>
                     </div>
                     <div class="col">
-                        <label for="Apelldo" class="form-label">Ingrese su apellido</label>
-                        <input type="text" class="form-control" placeholder="Ingrese su apellido" aria-label="apellido">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" placeholder="Ingrese su apellido" id="apellido">
+                            <label for="apelldo">Ingrese su apellido</label>
+                        </div>
                     </div>
                 </div>
                 <div class="row g-3 mb-3">
                     <div class="col">
-                        <label for="Email" class="form-label">Ingrese su Email</label>
-                        <input type="email" class="form-control" placeholder="Ingres su email" aria-label="email">
+                        <div class="col form-floating">
+                            <input type="email" class="form-control" placeholder="Ingres su email" id="Email">
+                            <label for="Email">Ingrese su Email</label>
+                        </div>
                     </div>
                     <div class="col">
-                        <label for="telefono" class="form-label">Ingrese su numero de celular</label>
-                        <input type="number" class="form-control" placeholder="Ingrese su numero de celular" aria-label="telefono">
+                        <div class="col form-floating">
+                            <input type="number" class="form-control" placeholder="Ingrese su telefono" id="telefono">
+                            <label for="telefono">Ingrese su telefono</label>
+                        </div>
                     </div>
                 </div>
                 <div class="mb-3">
                     <label for="Genero" class="form-label">Seleccione su genero</label>
                     <select class="form-select" aria-label="Genero">
-                        <option selected>Seleccione su genero</option>
+                        <option selected></option>
                         <option value="1">Femenino</option>
                         <option value="2">Masculino</option>
                         <option value="3">Indefinido</option>
@@ -86,24 +94,39 @@
                 <div class="mb-3">
                     <label for="Nacionalidad" class="form-label">Seleccione su Nacionalidad</label>
                     <select class="form-select" aria-label="Nacionalidad">
-                        <option selected>Seleccione su Nacionalidad</option>
+                        <option selected></option>
                         <option value="1">Argentino</option>
                         <option value="2">Brasilero</option>
                         <option value="3">Uruguayo</option>
                         <option value="4">Paraguayo</option>
                     </select>
                 </div>
-                <div  class="main__inscripcion__fieldset__contenedor mb-3">
+                <div class="main__inscripcion__formulario__fieldset__contenedor mb-3">
+                    <label for="Checkbox" class="form-label">¿Tiene un auto clasico?</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Si</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">No</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="formFileMultiple" class="form-label">En caso de tener un clasico, por favor ingrese sus fotos</label>
+                    <input class="form-control" type="file" id="formFileMultiple" multiple>
+                </div>
+                <div  class="main__inscripcion__formulario__fieldset__contenedor mb-3">
                     <label for="inscripcion" class="form-label">Escriba su carta de presentacion</label>
-                    <textarea name="inscripcion" id="inscripcion" cols="50" rows="20">Ingrese su carta de presentacion</textarea>
+                    <textarea name="inscripcion" id="inscripcion" cols="50" rows="20"></textarea>
                 </div>
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="TyC">
-                    <label class="form-check-label" for="TyC">Acepta los terminos y condiciones</label>
+                    <label class="form-check-label" for="TyC"><a href="#">Acepta los terminos y condiciones</a></label>
                 </div>
                 <div class="d-grid gap-2">
-                    <button class="btn btn-primary" type="button">Enviar</button>
-                    <button class="btn btn-danger" type="button">Resetear</button>
+                    <button class=" btn main__inscripcion__formulario__fieldset__boton" type="button">Enviar</button>
+                    <button class="btn main__inscripcion__formulario__fieldset__boton" type="button">Resetear</button>
                 </div>
             </fieldset>
         </form>
