@@ -10,6 +10,11 @@
         &__fieldset{
             border: 1px white solid;
             padding: 5px;
+            @media screen and (max-width: 540px) {
+                margin-left: 15px;
+                margin-right: 15px;
+                
+            }
             &__textarea{
                 height: 200px;
             }
