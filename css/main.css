@@ -253,6 +253,13 @@ p {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 510px) {
+  .main__inscripcion__formulario__fieldset {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
 .main__inscripcion__formulario__fieldset__contenedor {
   display: -webkit-box;
   display: -ms-flexbox;
